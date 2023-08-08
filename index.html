@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/check-outline.svg">
+  <title>Rak Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1>Aplikasi Rak Buku</h1>
+    </center>
+  </header>
+
+<div class="wrapper">
+  <div class="container bg-white shadow" id="add-book">
+    <h2 class="container-header text-center">Masukkan Buku Baru</h2>
+    <form class="form" action="#" id="form">
+      <div class="form-group form-title">
+        <label for="inputBookTitle">Judul</label>
+        <input type="text" id="inputBookTitle" name="title" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="inputBookAuthor">Penulis</label>
+        <input type="text" id="inputBookAuthor" name="title" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="inputBookYear">Tahun</label>
+        <input type="number" id="inputBookYear" name="number" required>
+      </div>
+      <div class="form-check form-title">
+        <label for="inputBookIsComplete">Selesai Dibaca</label>
+        <input type="checkbox" id="inputBookIsComplete">
+      </div>
+      <input type="submit" value="Submit" name="Submit" class="btn-submit">
+    </form>
+  </div>
+  
+  
+  <div class="container" id="add-cari">
+    <h2 class="container-header text-center">Pencarian</h2>
+    <form class="form" action="#" id="formSearch">
+      <div class="form-group form-title">
+        <label for="inputSearchBook"><b>Cari</b><i> *Pencarian judul buku pada rak</i></label>
+        <input type="text" id="inputSearchBook" name="title" required>
+      </div>
+      <input type="submit" value="Search" name="Submit" class="btn-submit">
+    </form>
+  </div>
+
+  <div class="container">
+    <h2 class="container-header">Belum selesai dibaca</h2>
+    <div class="list-item" id="books">
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2 class="container-header">Selesai dibaca</h2>
+    <div class="list-item" id="completed-books">
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+</body>
+</html>
