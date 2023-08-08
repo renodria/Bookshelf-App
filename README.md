@@ -1,2 +1,2 @@
 # Bookshelf-App
-Aplikasi Rak Buku berbasis Web.
+Website Rak Buku yang menerapkan teknik manipulasi DOM dan web storage
